@@ -19,10 +19,16 @@ var clearScroll = setInterval(function () {
 }, SCROLL_CHECK);
 
 //BUOC 2: CLICK DELETE 
-document.getElementsByClassName('DIEN_CLASS_VAO_DAY').click();
+var arrClick = document.getElementsByClassName('DIEN_CLASS_VAO_DAY');
+for (let i = 0; i < arrClick.length; i++) {
+    arrClick[i].click();
+}
 
 //BUOC 3: 
-document.getElementsByClassName('layerConfirm').click();
+var arrDelete = document.getElementsByClassName('layerConfirm');
+for (let i = 0; i < arrDelete.length; i++) {
+    arrDelete[i].click();
+}
 
 //BUOC 4: 
 Reload trang.
